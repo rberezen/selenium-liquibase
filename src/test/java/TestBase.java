@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 import org.junit.After;
@@ -9,15 +10,22 @@ public class TestBase {
 
   protected WebDriver driver;
   protected static Properties prop = new Properties();
-
   static String basePath = System.getProperty("user.dir");
+
+  static {
+    // Load the configuration file in a static block
+    try {
+      InputStream input = TestBase.class.getClassLoader().getResourceAsStream("config.properties");
+      prop.load(input);
+      input.close();
+    } catch (IOException e) {
+      e.printStackTrace();
+      throw new RuntimeException("Failed to load config.properties", e);
+    }
+  }
 
   @Before
   public void setUp() throws Exception {
-    // Load the configuration file
-    InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties");
-    prop.load(input);
-
     // Set the path to your ChromeDriver
     System.setProperty("webdriver.chrome.driver", basePath + "/" + prop.getProperty("webdriver.chrome.driver"));
 
@@ -36,3 +44,4 @@ public class TestBase {
     }
   }
 }
+

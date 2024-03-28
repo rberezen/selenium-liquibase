@@ -31,7 +31,7 @@ public class LiquibaseAPITest extends TestBase {
     // Get the text content of the element
     String infoFrameText = infoFrame.getText();
 
-    // Assert that the text content contains "API"
-    Assert.assertTrue("The element text does not contain 'API'", infoFrameText.contains("API"));
+    // Assert that the text content contains "Pemble" student
+    Assert.assertTrue("Class does not have 'Pemble' student", infoFrameText.contains("Pemble"));
   }
 }

@@ -8,7 +8,7 @@ CREATE TABLE person (
 );
 
 --changeset qa:2
-INSERT INTO person (id, last_name, first_name) VALUES (1, 'Rus', 'Ber');
+INSERT INTO person (id, last_name, first_name) VALUES (1, 'Kiven', 'Dralle');
 
 --changeset qa:3
-INSERT INTO person (id, last_name, first_name) VALUES (2, 'Dam', 'Yef');
+INSERT INTO person (id, last_name, first_name) VALUES (2, 'Ysolde', 'Grent');

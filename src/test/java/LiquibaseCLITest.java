@@ -38,7 +38,7 @@ public class LiquibaseCLITest extends TestBase {
     // Get the text content of the element
     String infoFrameText = infoFrame.getText();
 
-    // Assert that the text content contains "Rus"
-    Assert.assertTrue("The element text does not contain 'Ber'", infoFrameText.contains("Ber"));
+    // Assert that the text content contains "Brondt" student
+    Assert.assertTrue("Class does not have 'Brondt' student", infoFrameText.contains("Brondt"));
   }
 }

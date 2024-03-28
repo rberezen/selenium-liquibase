@@ -13,7 +13,7 @@ public class LiquibaseMavenTest extends TestBase {
     // Get the text content of the element
     String infoFrameText = infoFrame.getText();
 
-    // Assert that the text content contains "Rus"
-    Assert.assertTrue("The element text does not contain 'Rus'", infoFrameText.contains("Rus"));
+    // Assert that the text content contains "Dralle" student
+    Assert.assertTrue("Class does not have 'Dralle' student", infoFrameText.contains("Dralle"));
   }
 }

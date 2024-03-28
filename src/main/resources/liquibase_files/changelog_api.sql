@@ -8,19 +8,19 @@ CREATE TABLE person (
 );
 
 --changeset qa:2
-INSERT INTO person (id, last_name, first_name) VALUES (1, 'Ola', 'Goo');
+INSERT INTO person (id, last_name, first_name) VALUES (1, 'Elara', 'Quinby');
 
 --changeset qa:3
-INSERT INTO person (id, last_name, first_name) VALUES (2, 'Foo', 'Bar');
+INSERT INTO person (id, last_name, first_name) VALUES (2, 'Toren', 'Fexley');
 
 --changeset qa:4
-INSERT INTO person (id, last_name, first_name) VALUES (3, 'Ola', 'Goo');
+INSERT INTO person (id, last_name, first_name) VALUES (3, 'Vespera', 'Jondale');
 
 --changeset qa:5
-INSERT INTO person (id, last_name, first_name) VALUES (4, 'Foo', 'Bar');
+INSERT INTO person (id, last_name, first_name) VALUES (4, 'Merrit', 'Sivley');
 
 --changeset qa:6
-INSERT INTO person (id, last_name, first_name) VALUES (5, 'Ola', 'Goo');
+INSERT INTO person (id, last_name, first_name) VALUES (5, 'Dracen', 'Vorley');
 
 --changeset qa:7
-INSERT INTO person (id, last_name, first_name) VALUES (6, 'Foo', 'Bar');
+INSERT INTO person (id, last_name, first_name) VALUES (6, 'Liora', 'Pemble');
